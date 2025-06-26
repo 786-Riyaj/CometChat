@@ -1,0 +1,59 @@
+#root {
+  font-family: sans-serif;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/* Navbar  & HeroForm*/
+.main_container {
+  background-image: url(assets/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 646px;
+}
+
+.menu {
+  margin: 25px;
+}
+
+/* PartnerBlock & ListSection */
+.block_container {
+  background-color: #0A0914;
+}
+
+.box {
+  height: 301px;
+}
+
+.list {
+  height: 588px;
+}
+
+/* ComLogo or company log */
+.logo {
+  background-image: url(assets/logo.png);
+  height: 125px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* partner & faqs */
+.partner {
+  height: 613px;
+}
+
+.faq {
+  height: 750px;
+}
+
+/* footer & footerHero */
+.hero {
+  background-image: url(assets/bg.jpg);
+  height: 480px;
+  background-size: cover;
+}
+
+
+.footer {
+  height: 985px;
+}
