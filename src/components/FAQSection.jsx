@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { FaChevronUp } from "react-icons/fa";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 
-// FAQ section-7
 const faqs = [
     {
         question: "This is a frequently asked question?",
@@ -31,6 +29,7 @@ const faqs = [
 ];
 
 const FAQSection = () => {
+
     const [openIndex, setOpenIndex] = useState(0);
 
     const toggleFAQ = (index) => {
@@ -38,26 +37,27 @@ const FAQSection = () => {
     };
 
     return (
-        <section className="py-16 px-4 md:px-20 bg-gray-50 text-black faq">
-            <h1 className="mt-5 mb-2 text-[#FF7129] text-xl font-bold text-center">FAQ’s</h1>
-            <h2 className="text-3xl font-semibold mb-10 text-center">
-                We want to help you<br />with all your doubts
+        <section className="py-12 px-4 sm:px-6 md:px-20 bg-gray-50 text-black">
+            <h1 className="text-center text-[#FF7129] text-xl font-bold mb-2">FAQ’s</h1>
+            <h2 className="text-center text-2xl sm:text-3xl font-semibold mb-10">
+                We want to help you<br className="hidden sm:block" /> with all your doubts
             </h2>
 
             <div className="max-w-3xl mx-auto space-y-4">
                 {faqs.map((faq, index) => (
-                    <div key={index} className="border border-gray-300 rounded-xl p-4 bg-white shadow-md">
+                    <div key={index} className="border border-gray-200 rounded-xl p-4 bg-white shadow-sm transition-all">
                         <button
                             onClick={() => toggleFAQ(index)}
                             className="w-full flex justify-between items-center text-left"
                         >
-                            <span className="font-medium">{faq.question}</span>
-                            <span className="text-xl ">
-                                {openIndex === index ? (<FaChevronUp />) : (<FaChevronDown />)}
+                            <span className="font-medium text-sm sm:text-base">{faq.question}</span>
+                            <span className="text-lg sm:text-xl">
+                                {openIndex === index ? <FaChevronUp /> : <FaChevronDown />}
                             </span>
                         </button>
+
                         {openIndex === index && faq.answer && (
-                            <p className="mt-3 text-gray-600 transition-all duration-300">
+                            <p className="mt-3 text-gray-600 text-sm sm:text-base transition-all duration-300">
                                 {faq.answer}
                             </p>
                         )}

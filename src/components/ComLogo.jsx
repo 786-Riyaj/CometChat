@@ -1,9 +1,9 @@
+
 import React from 'react';
 
-// Company logo Section -3
 const CompanyLogo = () => {
     return (
-        <div className='logo'>
+        <div className="flex flex-wrap justify-center items-center gap-6 py-6 px-4 md:justify-between logo">
         </div>
     );
 };

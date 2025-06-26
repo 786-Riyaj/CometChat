@@ -1,17 +1,15 @@
 import React from 'react';
 
-// Be a partner Section-4
 const PartnerBlock = () => {
     return (
-        <section className="py-10  md:px-25    tracking-wide box">
-            <p className="mt-25 mb-2 text-[#FF7F3E] text-xl">
+        <section className="py-10 px-4 md:px-20 tracking-wide">
+            <p className="mb-2 text-[#FF7F3E] text-lg sm:text-xl">
                 Be a partner
             </p>
-            <h2 className="text-4xl font-weight:bold text-white">
-                CometChat partner <br /> advantages
+            <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight">
+                CometChat partner <br className="hidden sm:block" /> advantages
             </h2>
         </section>
-
     );
 };
 
